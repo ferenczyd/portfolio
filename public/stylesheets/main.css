@@ -1,0 +1,58 @@
+body {
+  color: #004A7C;
+  background-color: #FAFAFA;
+  font-size: 20px;
+  font: 1em 'Montserrat', sans-serif;
+}
+
+h3 {
+  color: #005691;
+  padding-left: 5px;
+}
+
+.heading {
+  padding: 15px;
+  display: flex;
+  font-size: 20px;
+  align-content: left;
+}
+
+.heading-txt{
+  padding-left: 20px;
+  text-align: center;
+  align-content: left;
+  font-size: 20px;
+}
+
+.accordion-item{
+  padding-left: 20px;
+}
+
+.accordion-button{
+  font-size: 20px;
+}
+
+.skills {
+  padding-left: 35px;
+}
+
+.profile-pic{
+  height: 200px; /* Initial size */
+}
+
+.skill{
+  width: 15%;
+  font-size: 18px;
+}
+
+.experience{
+  width: 85%;
+}
+
+p {
+  padding: 0;
+}
+
+.table{
+  font-size: 20px;
+}
