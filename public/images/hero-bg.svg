@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" role="img" aria-label="Subtle skyline with aircraft and data constellation">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7fafc"/>
+      <stop offset="100%" stop-color="#e6eef7"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dbe5f1"/>
+      <stop offset="100%" stop-color="#cbd5e0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#sky)"/>
+
+  <!-- Mountains -->
+  <path d="M0 420 L260 260 L520 420 Z" fill="url(#mountain)" opacity="0.35"/>
+  <path d="M420 420 L740 230 L1060 420 Z" fill="url(#mountain)" opacity="0.4"/>
+  <path d="M900 420 L1220 260 L1600 420 Z" fill="url(#mountain)" opacity="0.3"/>
+
+  <!-- Skyline -->
+  <g fill="#c7d2e3" opacity="0.45">
+    <rect x="110" y="280" width="40" height="140"/>
+    <rect x="170" y="300" width="60" height="120"/>
+    <rect x="250" y="260" width="50" height="160"/>
+    <rect x="320" y="310" width="45" height="110"/>
+    <rect x="390" y="270" width="70" height="150"/>
+    <rect x="480" y="300" width="55" height="120"/>
+    <rect x="550" y="285" width="45" height="135"/>
+  </g>
+
+  <!-- Aircraft -->
+  <path d="M980 140 L1220 155 L1240 165 L1220 170 L980 160 L930 180 L900 175 L940 155 L900 150 L910 140 L960 145 Z" fill="#0033A0" opacity="0.12"/>
+
+  <!-- Knowledge graph constellation -->
+  <g stroke="#0033A0" stroke-width="1.5" opacity="0.18" fill="#0033A0">
+    <circle cx="1180" cy="90" r="3"/>
+    <circle cx="1230" cy="70" r="3"/>
+    <circle cx="1290" cy="95" r="3"/>
+    <circle cx="1250" cy="120" r="3"/>
+    <circle cx="1320" cy="130" r="3"/>
+    <line x1="1180" y1="90" x2="1230" y2="70"/>
+    <line x1="1230" y1="70" x2="1290" y2="95"/>
+    <line x1="1290" y1="95" x2="1250" y2="120"/>
+    <line x1="1250" y1="120" x2="1320" y2="130"/>
+  </g>
+
+  <!-- Data analytics arc -->
+  <path d="M100 120 C220 40, 380 40, 520 120" fill="none" stroke="#0033A0" stroke-width="2" opacity="0.12"/>
+  <circle cx="100" cy="120" r="3" fill="#0033A0" opacity="0.2"/>
+  <circle cx="520" cy="120" r="3" fill="#0033A0" opacity="0.2"/>
+</svg>
