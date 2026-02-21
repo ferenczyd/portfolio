@@ -5,6 +5,7 @@ window.addEventListener('scroll', function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
+  window.scrollTo(0, 0);
   var container = document.getElementById('knowledgeGraph');
   if (!container || typeof vis === 'undefined') return;
 
