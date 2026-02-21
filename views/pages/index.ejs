@@ -8,6 +8,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <script src="/main.js"></script>
     <title>Dom's Website</title>
 </head>
@@ -36,6 +37,19 @@
         </div>
     </nav>
 
+    <section id="knowledge-graph">
+        <h3>Career Ontology</h3>
+        <div class="graph-controls">
+            <label for="graphYear" class="graph-year-label">Year:</label>
+            <input id="graphYear" type="range" min="2011" max="2026" step="1" value="2026" />
+            <span id="graphYearValue" class="graph-year-value">2026</span>
+            <button id="graphPlayPause" class="btn btn-sm btn-outline-primary" type="button">Pause</button>
+        </div>
+        <div class="knowledge-graph">
+            <div id="knowledgeGraph"></div>
+        </div>
+    </section>
+
 
 
     <hr>
@@ -48,6 +62,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2023_07_present_lead_bi_analyst"
                         data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <strong>July 2023 - Present</strong>: Boeing BCA - Supply Chain Functional Excellence - Lead Business Intelligence Analyst
                     </button>
@@ -56,13 +71,13 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Spearheading AI Strategy and Deployment for BCA Supply Chain Functional Excellence, integrating AI into scalable solutions to free up human capital to make accelerated decisions and actions</li>
-                            <li>Developed batch OpenAI API Python script to augment system data, integrating AI into SQL tables for enhanced analysis in Tableau Dashboards</li>
-                            <li>Developed proof of concept RAG Chatbot using Flask in Python</li>
-                            <li>Supporting Multi-Cloud Hybrid Data Architecture Strategy and Governance team, driving transparent, cost effective and reliable production solutions</li>
-                            <li>Led Analytics development supporting BCA Inventory Optimization, using data to navigate dynamic production schedules by balancing Purchase Order Spend with Supplier Stability resulting in $500M+ cost reduction in 2024</li>
-                            <li>Developed an R Shiny application to simulate supply, demand, and inventory projections, facilitating strategic rescheduling decisions</li>
-                            <li>Mentored team members in leveraging R for web development and data analytics, fostering skill development and knowledge sharing</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:1">Spearheading AI Strategy and Deployment for BCA Supply Chain Functional Excellence, integrating AI into scalable solutions to free up human capital to make accelerated decisions and actions</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:2">Developed batch OpenAI API Python script to augment system data, integrating AI into SQL tables for enhanced analysis in Tableau Dashboards</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:3">Developed proof of concept RAG Chatbot using Flask in Python</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:4">Supporting Multi-Cloud Hybrid Data Architecture Strategy and Governance team, driving transparent, cost effective and reliable production solutions</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:5">Led Analytics development supporting BCA Inventory Optimization, using data to navigate dynamic production schedules by balancing Purchase Order Spend with Supplier Stability resulting in $500M+ cost reduction in 2024</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:6">Developed an R Shiny application to simulate supply, demand, and inventory projections, facilitating strategic rescheduling decisions</li>
+                            <li data-kg-filter="achievement:role_2023_07_present_lead_bi_analyst:7">Mentored team members in leveraging R for web development and data analytics, fostering skill development and knowledge sharing</li>
                         </ul>
                     </div>
                 </div>
@@ -71,6 +86,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOnePointFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2022_03_2023_07_sr_bi_analyst"
                         data-bs-target="#collapseOnePointFive" aria-expanded="false" aria-controls="collapseOnePointFive">
                         <strong>March 2022 - July 2023</strong>: Boeing Enterprise - Supply Chain Business Transformation - Sr. Business Intelligence Analyst
                     </button>
@@ -79,11 +95,11 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Developed R Shiny application to search and ingest semiconductor component availability and lead time data using multiple distributor APIs</li>
-                            <li>Technical Lead for the development of the Enterprise Health & Visibility projects</li>
-                            <li>Develop Data Pipeline and Tableau Dashboards for BCA/BGS Inventory Price Differential Project</li>
-                            <li>Identify and implement new technologies and tools for team (GitLab, DataIku, RStudio Professional)</li>
-                            <li>Supported BCA ESRC Wire Bundle Recovery Project</li>
+                            <li data-kg-filter="achievement:role_2022_03_2023_07_sr_bi_analyst:1">Developed R Shiny application to search and ingest semiconductor component availability and lead time data using multiple distributor APIs</li>
+                            <li data-kg-filter="achievement:role_2022_03_2023_07_sr_bi_analyst:2">Technical Lead for the development of the Enterprise Health & Visibility projects</li>
+                            <li data-kg-filter="achievement:role_2022_03_2023_07_sr_bi_analyst:3">Develop Data Pipeline and Tableau Dashboards for BCA/BGS Inventory Price Differential Project</li>
+                            <li data-kg-filter="achievement:role_2022_03_2023_07_sr_bi_analyst:4">Identify and implement new technologies and tools for team (GitLab, DataIku, RStudio Professional)</li>
+                            <li data-kg-filter="achievement:role_2022_03_2023_07_sr_bi_analyst:5">Supported BCA ESRC Wire Bundle Recovery Project</li>
                         </ul>
                     </div>
                 </div>
@@ -92,6 +108,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2020_01_2022_03_senior_bpa"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <strong>January 2020 - March 2022</strong>: Boeing BCA - Program Management Organization - Senior Business Process Analyst
                     </button>
@@ -100,12 +117,12 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Developed React web applications that enable users to input data into SQL databases used
+                            <li data-kg-filter="achievement:role_2020_01_2022_03_senior_bpa:1">Developed React web applications that enable users to input data into SQL databases used
                                 for
                                 creating program level KPI dashboards. Created CI/CD pipelines to push apps to Dev, Test
                                 and Prod
                                 CloudFoundry servers.</li>
-                            <li>Developed dashboards that integrate multiple data sources and systems to provide
+                            <li data-kg-filter="achievement:role_2020_01_2022_03_senior_bpa:2">Developed dashboards that integrate multiple data sources and systems to provide
                                 holistic program
                                 level performance metrics.</li>
                         </ul>
@@ -116,6 +133,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2018_06_2020_01_bpa"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <strong>June 2018 - January 2020</strong>: Boeing 777/777x - Program Management Organization - Business Process Analyst
                     </button>
@@ -124,7 +142,7 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Connected disparate databases from multiple organizations to create business
+                            <li data-kg-filter="achievement:role_2018_06_2020_01_bpa:1">Connected disparate databases from multiple organizations to create business
                                 intelligence solutions that provide comprehensive value stream visibility for program
                                 management.</li>
                         </ul>
@@ -135,6 +153,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2016_05_2018_06_integration_analyst"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         <strong>May 2016 - June 2018</strong>: Boeing 777x - Tooling Operations - Integration Analyst
                     </button>
@@ -143,25 +162,25 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Integrated unstructured data from Excel files with SQL database connections to create an
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:1">Integrated unstructured data from Excel files with SQL database connections to create an
                                 executive summary report that identifies tool readiness risks to production schedule.
                             </li>
-                            <li>Worked with Tooling Engineering, Tooling Operations and Tooling Construction to develop
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:2">Worked with Tooling Engineering, Tooling Operations and Tooling Construction to develop
                                 and create performance to plan metrics from multiple data sources using basic programing
                                 and database queries in Microsoft Excel, Microsoft Access, and Tableau.</li>
-                            <li>Iteratively created and updated 777x Tooling Line of Balance dashboard using database
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:3">Iteratively created and updated 777x Tooling Line of Balance dashboard using database
                                 queries according to shareholder needs. Identified and shared missing and incongruent
                                 information to data owners, and revised models according to shareholder feedback.</li>
-                            <li>Created and maintained automated ETAC Line of Balance reports</li>
-                            <li>Compiled supporting data to develop estimates and schedules</li>
-                            <li>Assembled tooling product data, presentation and support materials for manufacturing,
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:4">Created and maintained automated ETAC Line of Balance reports</li>
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:5">Compiled supporting data to develop estimates and schedules</li>
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:6">Assembled tooling product data, presentation and support materials for manufacturing,
                                 procurement and shop-floor teams</li>
-                            <li>Gathered and prepared data for offload tooling business systems</li>
-                            <li>Identified, coordinated and processed customer requirements for tooling products and
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:7">Gathered and prepared data for offload tooling business systems</li>
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:8">Identified, coordinated and processed customer requirements for tooling products and
                                 information</li>
-                            <li>Assisted in the creation of project schedules and updated project status using Microsoft
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:9">Assisted in the creation of project schedules and updated project status using Microsoft
                                 Project</li>
-                            <li>Collaborated in reviewing and creating tooling product documentation and procedures</li>
+                            <li data-kg-filter="achievement:role_2016_05_2018_06_integration_analyst:10">Collaborated in reviewing and creating tooling product documentation and procedures</li>
                         </ul>
                     </div>
                 </div>
@@ -170,6 +189,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="role:role_2011_04_2016_05_expeditor"
                         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <strong>April 2011 - May 2016</strong>: Boeing 787 - Supply Chain Fulfillment - Expeditor
                     </button>
@@ -178,26 +198,26 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Joined supply chain data with production quality data to identify reoccurring defects
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:1">Joined supply chain data with production quality data to identify reoccurring defects
                                 that created part shortages and impacted production schedule through drill-down
                                 exploration. This data drove multiple projects and workshops to identify root cause and
                                 take corrective action. Defects and shortages decreased and process adherence increased.
                             </li>
-                            <li>Led 787 cross-functional value stream mapping accelerated improvement workshop based on
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:2">Led 787 cross-functional value stream mapping accelerated improvement workshop based on
                                 data analysis to reduce defects and re-ordering of parts. Defects decreased by over 50%
                                 in test area.</li>
-                            <li>Requirements owner for 787 MMO C&D Zodiac Online Horse Blanket tool. I collected
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:3">Requirements owner for 787 MMO C&D Zodiac Online Horse Blanket tool. I collected
                                 requirements from MMO managers, SCAs, and MPRFs and translated them into logic that was
                                 used by IT to develop and deploy the tool. This supplier shortage visibility tool was
                                 used in support of a critical supplier recovery effort to ensure coordination in the
                                 global supply chain.</li>
-                            <li>Teamed with other job roles to help define, build, test and certify the 787 battery
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:4">Teamed with other job roles to help define, build, test and certify the 787 battery
                                 solution that directly led to returning the fleet to service. This included tracking and
                                 reporting the fabrication and shipping status of the recovery solution parts for planes
                                 that were in service or being assembled in the factory.</li>
-                            <li>Integrated and analyzed part shortage data using Access, Excel, and Cognos to create
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:5">Integrated and analyzed part shortage data using Access, Excel, and Cognos to create
                                 reports for manufacturing, procurement and quality teams.</li>
-                            <li>Supervised multiple teams as a Temporary Manager and Team Lead.</li>
+                            <li data-kg-filter="achievement:role_2011_04_2016_05_expeditor:6">Supervised multiple teams as a Temporary Manager and Team Lead.</li>
                         </ul>
                     </div>
                 </div>
@@ -216,6 +236,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="cred:uw_pce_2021_2022"
                         data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <strong>2021 - 2022</strong>: Professional & Continuing Education from University of Washington
                     </button>
@@ -224,9 +245,9 @@
                     data-bs-parent="#accordionExample2">
                     <div class="accordion-body">
                         <ul>
-                            <li>Network and System Administration (October 2022 - December 2022)</li>
-                            <li>Certificate in Python Programming (October 2021 - June 2022)</li>
-                            <li>Foundations of Statistics (2021)</li>
+                            <li data-kg-filter="cred:uw_net_sys_admin_2022_10_12">Network and System Administration (October 2022 - December 2022)</li>
+                            <li data-kg-filter="cred:uw_cert_python_2021_10_2022_06">Certificate in Python Programming (October 2021 - June 2022)</li>
+                            <li data-kg-filter="cred:uw_foundations_statistics_2021">Foundations of Statistics (2021)</li>
                         </ul>
                     </div>
                 </div>
@@ -235,6 +256,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSeven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="cred:cwu_bs_2016_2019"
                         data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                         <strong>2016 - 2019</strong>: Bachelor of Science from Central Washington University
                     </button>
@@ -249,6 +271,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingEight">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="cred:evcc_aa_2012_2016"
                         data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                         <strong>2012 - 2016</strong>: Associate of Arts from Everett Community College
                     </button>
@@ -264,6 +287,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-kg-filter="cred:udemy_certs_2017_2023"
                         data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                         <strong>2017 - 2023</strong>: Udemy Certificates
                     </button>
@@ -272,11 +296,11 @@
                     data-bs-parent="#accordionExample2">
                     <div class="accordion-body">
                         <ul>
-                            <li>The Complete 2023 Web Development Bootcamp</li>
-                            <li>Data Science A-Z</li>
-                            <li>R Programming A-Z</li>
-                            <li>R Programming: Advanced Analytics in R for Data Science</li>
-                            <li>Tableau 10 A-Z</li>
+                            <li data-kg-filter="cred:udemy_webdev_bootcamp_2023">The Complete 2023 Web Development Bootcamp</li>
+                            <li data-kg-filter="cred:udemy_data_science_az">Data Science A-Z</li>
+                            <li data-kg-filter="cred:udemy_r_prog_az">R Programming A-Z</li>
+                            <li data-kg-filter="cred:udemy_adv_r">R Programming: Advanced Analytics in R for Data Science</li>
+                            <li data-kg-filter="cred:udemy_tableau_10_az">Tableau 10 A-Z</li>
                         </ul>
                     </div>
                 </div>
@@ -302,7 +326,7 @@
                     <div class="accordion-body">
                         <table class="table table-sm">
                             <tbody>
-                                <tr>
+                                <tr data-kg-filter="skill:tableau">
                                     <td class="skill">Tableau</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Tableau experience"
@@ -312,7 +336,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:sql">
                                     <td class="skill">SQL</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="SQL experience"
@@ -322,7 +346,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:rmarkdown_jupyter_notebook">
                                     <td class="skill">RMarkdown / Jupyter Notebook</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="RMarkdown and Jupyter Notebook experience"
@@ -332,7 +356,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:etl_pipelines">
                                     <td class="skill">ETL Pipelines</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="ETL Pipelines experience"
@@ -360,7 +384,7 @@
                     <div class="accordion-body">
                         <table class="table table-sm">
                             <tbody>
-                                <tr>
+                                <tr data-kg-filter="skill:github_gitlab">
                                     <td class="skill">GitHub / GitLab</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="GitHub and GitLab experience"
@@ -370,7 +394,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:rshiny">
                                     <td class="skill">RShiny</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="RShiny experience"
@@ -380,7 +404,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:python">
                                     <td class="skill">Python</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Python experience"
@@ -390,7 +414,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:api_integration">
                                     <td class="skill">API Integration</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="API Integration experience"
@@ -400,7 +424,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:web_development">
                                     <td class="skill">Web Development</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Web Development experience"
@@ -410,7 +434,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:linux">
                                     <td class="skill">Linux</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Linux experience"
@@ -420,7 +444,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:cloud_services">
                                     <td class="skill">Cloud Services</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Cloud Services experience"
@@ -448,7 +472,7 @@
                     <div class="accordion-body">
                         <table class="table table-sm">
                             <tbody>
-                                <tr>
+                                <tr data-kg-filter="skill:team_leadership">
                                     <td class="skill">Team Leadership</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Team Leadership experience"
@@ -458,7 +482,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:ai_strategy_and_deployment">
                                     <td class="skill">AI Strategy and Deployment</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="AI Strategy and Deployment experience"
@@ -468,7 +492,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr data-kg-filter="skill:cross_functional_project_implementations">
                                     <td class="skill">Cross Functional Project Implementations</td>
                                     <td class="experience">
                                         <div class="progress" role="progressbar" aria-label="Cross Functional Project Implementations experience"
