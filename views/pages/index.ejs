@@ -1,7 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= (typeof seo !== 'undefined' && seo && seo.title) ? seo.title : "Dominic Ferenczy Portfolio" %></title>
+    <meta name="description" content="<%= (typeof seo !== 'undefined' && seo && seo.description) ? seo.description : 'Portfolio of Dominic Ferenczy focused on AI, analytics, digital supply chain, and business intelligence leadership.' %>">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Dominic Ferenczy">
+    <meta name="theme-color" content="#0A1F44">
+    <link rel="canonical" href="<%= (typeof seo !== 'undefined' && seo && seo.url) ? seo.url : '/' %>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= (typeof seo !== 'undefined' && seo && seo.title) ? seo.title : 'Dominic Ferenczy Portfolio' %>">
+    <meta property="og:description" content="<%= (typeof seo !== 'undefined' && seo && seo.description) ? seo.description : 'Portfolio of Dominic Ferenczy focused on AI, analytics, digital supply chain, and business intelligence leadership.' %>">
+    <meta property="og:url" content="<%= (typeof seo !== 'undefined' && seo && seo.url) ? seo.url : '/' %>">
+    <meta property="og:image" content="<%= (typeof seo !== 'undefined' && seo && seo.image) ? seo.image : '/dom.png' %>">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= (typeof seo !== 'undefined' && seo && seo.title) ? seo.title : 'Dominic Ferenczy Portfolio' %>">
+    <meta name="twitter:description" content="<%= (typeof seo !== 'undefined' && seo && seo.description) ? seo.description : 'Portfolio of Dominic Ferenczy focused on AI, analytics, digital supply chain, and business intelligence leadership.' %>">
+    <meta name="twitter:image" content="<%= (typeof seo !== 'undefined' && seo && seo.image) ? seo.image : '/dom.png' %>">
+
+    <% if (typeof structuredData !== 'undefined' && structuredData) { %>
+    <script type="application/ld+json"><%- structuredData %></script>
+    <% } %>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -10,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
     <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <script src="/main.js"></script>
-    <title>Dom's Website</title>
 </head>
 
 <body>
@@ -28,6 +51,7 @@
                     <a class="nav-link" href="#work-experience">Work Experience</a>
                     <a class="nav-link" href="#education">Education</a>
                     <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#connect">Connect</a>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -508,6 +532,27 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="connect">
+        <h3>Connect</h3>
+        <p class="connect-blurb">Interested in AI, Analytics, or Digital Transformation?
+<br>
+Let's connect.</p>
+        <div class="connect-links" aria-label="Connect links">
+            <a class="connect-link" href="https://www.linkedin.com/in/dominic-ferenczy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                    <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 10.6H5.67V18H8.34V10.6ZM7 6.35A1.55 1.55 0 1 0 7 9.45A1.55 1.55 0 1 0 7 6.35ZM18.33 13.8C18.33 11.57 17.14 10.36 15.55 10.36C14.26 10.36 13.68 11.07 13.36 11.57V10.6H10.8C10.83 11.24 10.8 18 10.8 18H13.36V13.87C13.36 13.65 13.38 13.44 13.44 13.29C13.62 12.86 14.03 12.41 14.74 12.41C15.67 12.41 16.05 13.12 16.05 14.17V18H18.61V13.8H18.33Z"/>
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+            <a class="connect-link" href="mailto:dominic.ferenczy@outlook.com" aria-label="Send email to Dominic Ferenczy">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                    <path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4ZM20 8.24L12 13L4 8.24V6L12 10.76L20 6V8.24Z"/>
+                </svg>
+                <span>Email</span>
+            </a>
         </div>
     </section>
 

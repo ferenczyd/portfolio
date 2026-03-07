@@ -182,7 +182,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // ---------- Build initial (collapsed) graph ----------
   var nodesArr = [
-    { id: 'profile', label: 'Dominic Ferenczy', shape: 'dot', size: 24, color: '#0033A0' },
+    { id: 'profile', label: 'Dominic Ferenczy', shape: 'dot', size: 24, color: '#0A1F44' },
     { id: 'education', label: 'Education', shape: 'dot', size: 18 },
     { id: 'skills', label: 'Skills', shape: 'dot', size: 18 },
     { id: 'experience', label: 'Experience', shape: 'dot', size: 18 }
@@ -302,25 +302,25 @@ window.addEventListener('DOMContentLoaded', function () {
     nodes: {
       shape: 'dot',
       size: 12,
-      font: { size: 13, color: '#2d3748' },
-      color: { border: '#0033A0', background: '#d9e2ef' }
+      font: { size: 13, color: '#0A1F44' },
+      color: { border: '#2563EB', background: '#F4F6F8' }
     },
     groups: {
-      root: { color: { background: '#0033A0', border: '#0033A0' }, font: { color: '#ffffff' } },
-      section: { color: { background: '#e6eef9', border: '#0033A0' } },
-      institution: { color: { background: '#eef2ff', border: '#4c51bf' } },
-      credential: { color: { background: '#f0fff4', border: '#2f855a' } },
-      credential_detail: { color: { background: '#f0fff4', border: '#68d391' } },
-      role: { color: { background: '#fffaf0', border: '#b7791f' } },
-      achievement: { color: { background: '#faf5ff', border: '#6b46c1' }, font: { size: 11 } },
+      root: { color: { background: '#0A1F44', border: '#0A1F44' }, font: { color: '#ffffff' } },
+      section: { color: { background: '#F4F6F8', border: '#2563EB' } },
+      institution: { color: { background: '#F4F6F8', border: '#0A1F44' } },
+      credential: { color: { background: '#F4F6F8', border: '#2563EB' } },
+      credential_detail: { color: { background: '#F4F6F8', border: '#0A1F44' } },
+      role: { color: { background: '#F4F6F8', border: '#2563EB' } },
+      achievement: { color: { background: '#F4F6F8', border: '#0A1F44' }, font: { size: 11 } },
 
       // Skill groups by category
-      skill_data_analytics: { color: { background: '#ebf8ff', border: '#2b6cb0' } },
-      skill_programming: { color: { background: '#e6fffa', border: '#2c7a7b' } },
-      skill_leadership: { color: { background: '#fff5f5', border: '#c53030' } }
+      skill_data_analytics: { color: { background: '#F4F6F8', border: '#2563EB' } },
+      skill_programming: { color: { background: '#F4F6F8', border: '#0A1F44' } },
+      skill_leadership: { color: { background: '#F4F6F8', border: '#2563EB' } }
     },
     edges: {
-      color: '#9fb3d1',
+      color: '#2563EB',
       width: 1.2,
       smooth: { type: 'continuous' },
       font: { size: 9, align: 'middle' }
