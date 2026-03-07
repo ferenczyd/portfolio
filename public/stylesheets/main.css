@@ -377,28 +377,117 @@ hr {
 }
 
 /* Responsive adjustments */
+@media (max-width: 992px) {
+  section {
+    padding: 48px 32px;
+  }
+
+  .heading-txt h1 {
+    font-size: 2.1rem;
+  }
+
+  .heading-txt p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .heading-txt h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .heading-txt p {
+    font-size: 0.95rem;
   }
   
   section {
-    padding: 80px;
-    margin: 1rem;
+    padding: 32px 20px;
+    margin: 0.75rem;
+    border-radius: 10px;
+  }
+
+  section:first-of-type {
+    margin-top: 1rem;
   }
   
   .profile-pic {
-    height: 150px;
-    width: 150px;
+    height: 128px;
+    width: 128px;
   }
   
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.7rem;
   }
   
   .accordion-button {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    padding: 0.9rem;
+    align-items: flex-start;
+  }
+
+  .accordion-body {
     padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .table td {
+    padding: 0.7rem;
+  }
+
+  .skill {
+    width: 38%;
+  }
+
+  .experience {
+    width: 62%;
+  }
+
+  .progress {
+    height: 24px;
+  }
+
+  #knowledgeGraph {
+    height: 300px;
+  }
+
+  .graph-controls {
+    gap: 0.5rem;
+  }
+
+  .connect-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .connect-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  section {
+    padding: 24px 14px;
+    margin: 0.6rem;
+  }
+
+  .heading-txt h1 {
+    font-size: 1.55rem;
+  }
+
+  #knowledgeGraph {
+    height: 260px;
   }
 }
 
