@@ -336,6 +336,45 @@ hr {
   padding: 0.25rem 0.75rem;
 }
 
+/* Portfolio section */
+.portfolio-card {
+  border: 1px solid rgba(37, 99, 235, 0.28);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(10, 31, 68, 0.06);
+}
+
+.portfolio-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--deep-navy);
+  margin: 0 0 0.75rem 0;
+}
+
+.portfolio-card p {
+  color: rgba(10, 31, 68, 0.84);
+  margin: 0 0 1rem 0;
+}
+
+.portfolio-link {
+  display: inline-block;
+  background: var(--accent-blue);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.portfolio-link:hover {
+  color: #ffffff;
+  background: #1f52c7;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.32);
+}
+
 /* Connect section */
 .connect-blurb {
   margin: 0 0 1rem 0;
