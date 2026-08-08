@@ -45,8 +45,35 @@ window.addEventListener('DOMContentLoaded', function () {
 
   var roles = [
     {
+      key: 'role_2026_07_present_ai_automation_manager',
+      label: 'Boeing BCA (Jul 2026–Present)\nManager - Artificial Intelligence & Automation',
+      collapse: 'collapseCurrentManager',
+      achievements: [
+        'Lead strategy, development, and delivery of AI-powered solutions, business applications, and advanced analytics for Boeing Commercial Airplanes Supply Chain',
+        'Lead a multidisciplinary Functional Excellence team spanning AI, data science, software development, automation, and business intelligence',
+        'Define and execute the organization\'s AI strategy and roadmap',
+        'Lead development of AI applications, intelligent automation, and internal web-based solutions',
+        'Build predictive models and advanced analytics that improve operational performance and business outcomes',
+        'Partner with business leaders, IT, and executive stakeholders to identify high-value opportunities and deliver scaled solutions',
+        'Establish governance and best practices for AI, analytics, and application development',
+        'Develop high-performing technical teams while fostering innovation, continuous improvement, and data-driven decision making'
+      ],
+      usedSkills: [
+        { key: 'ai_strategy_and_deployment', t: 'core' },
+        { key: 'team_leadership', t: 'leadership' },
+        { key: 'cross_functional_project_implementations', t: 'leadership' },
+        { key: 'python', t: 'core' },
+        { key: 'api_integration', t: 'core' },
+        { key: 'web_development', t: 'core' },
+        { key: 'etl_pipelines', t: 'applied' },
+        { key: 'tableau', t: 'applied' },
+        { key: 'sql', t: 'applied' },
+        { key: 'cloud_services', t: 'enabling' }
+      ]
+    },
+    {
       key: 'role_2023_07_present_lead_bi_analyst',
-      label: 'Boeing BCA (Jul 2023–Present)\nLead Business Intelligence Analyst',
+      label: 'Boeing BCA (Jul 2023–Jul 2026)\nLead Business Intelligence Analyst',
       collapse: 'collapseOne',
       achievements: [
         'Spearheading AI Strategy and Deployment for BCA Supply Chain Functional Excellence, integrating AI into scalable solutions to free up human capital to make accelerated decisions and actions',
@@ -338,7 +365,8 @@ window.addEventListener('DOMContentLoaded', function () {
   var revealToken = 0;
 
   var roleYearRanges = [
-    { id: 'role|role_2023_07_present_lead_bi_analyst', start: 2023, end: new Date().getFullYear() },
+    { id: 'role|role_2026_07_present_ai_automation_manager', start: 2026, end: new Date().getFullYear() },
+    { id: 'role|role_2023_07_present_lead_bi_analyst', start: 2023, end: 2026 },
     { id: 'role|role_2022_03_2023_07_sr_bi_analyst', start: 2022, end: 2023 },
     { id: 'role|role_2020_01_2022_03_senior_bpa', start: 2020, end: 2022 },
     { id: 'role|role_2018_06_2020_01_bpa', start: 2018, end: 2020 },

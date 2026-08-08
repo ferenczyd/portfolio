@@ -3,7 +3,7 @@ const path = require('path')
 
 const PORT = process.env.PORT || 5001
 const SITE_NAME = 'Dominic Ferenczy Portfolio'
-const SITE_DESCRIPTION = 'Portfolio of Dominic Ferenczy focused on AI, analytics, digital supply chain, and business intelligence leadership.'
+const SITE_DESCRIPTION = 'Portfolio of Dominic Ferenczy, Manager - Artificial Intelligence & Automation, focused on AI, analytics, digital supply chain, and business intelligence leadership.'
 
 const app = express()
 
@@ -19,7 +19,7 @@ app
       '@context': 'https://schema.org',
       '@type': 'Person',
       name: 'Dominic Ferenczy',
-      jobTitle: 'AI & Digital Supply Chain Deployment Leader',
+      jobTitle: 'Manager - Artificial Intelligence & Automation',
       description: SITE_DESCRIPTION,
       url: pageUrl,
       email: 'mailto:dominic.ferenczy@outlook.com',
