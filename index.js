@@ -3,7 +3,7 @@ const path = require('path')
 
 const PORT = process.env.PORT || 5001
 const SITE_NAME = 'Dominic Ferenczy Portfolio'
-const SITE_DESCRIPTION = 'Portfolio of Dominic Ferenczy, Manager - Artificial Intelligence & Automation, focused on AI, analytics, digital supply chain, and business intelligence leadership.'
+const SITE_DESCRIPTION = 'Personal portfolio of Dominic Ferenczy, focused on AI, analytics, digital supply chain, and business intelligence leadership. This site represents Dominic personally and is not affiliated with his employer.'
 
 const app = express()
 

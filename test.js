@@ -7,7 +7,7 @@ const env = Object.assign({}, process.env, {PORT: 51236});
 const child = spawn('node', ['index.js'], {env});
 
 test('responds to requests', (t) => {
-  t.plan(5);
+  t.plan(7);
   let complete = false;
 
   const timeout = setTimeout(() => {
@@ -32,8 +32,10 @@ test('responds to requests', (t) => {
         t.equal(response.statusCode, 200);
         // Assert portfolio content checks
         t.notEqual(response.body.indexOf("<title>Dominic Ferenczy Portfolio</title>"), -1);
-        t.notEqual(response.body.indexOf("Manager - Artificial Intelligence &amp; Automation"), -1);
+        t.notEqual(response.body.indexOf("Manager - Artificial Intelligence & Automation"), -1);
         t.notEqual(response.body.indexOf("July 2026 - Present"), -1);
+        t.notEqual(response.body.indexOf("Personal portfolio"), -1);
+        t.notEqual(response.body.indexOf("Personal Projects"), -1);
       } catch (error) {
         complete = true;
         clearTimeout(timeout);
